@@ -1,3 +1,14 @@
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
 .greet{
   width: auto;
   margin: auto;
@@ -8,58 +19,155 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 100px);
+  height: calc(90vh - 60px);
   width: auto;
-  background-color: bisque;
 }
 
 .button{
-
-  width: 70%;
+  display: flex;
   margin: auto;
   padding: 50px;
   text-align: center;
 
   box-sizing: border-box;
-  border: 3px solid #000000;
+  border: 10px solid #000000;
   box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
+  border-radius: 50px;
 
   font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 36px;
   color: white;
 }
 
-.activity{
-  box-sizing: border-box;
-  height: 20em;
-  background-image: url("images/Acitivites.jpg");
-  background-size: cover;
-  box-sizing: border-box;
-  border: 3px solid #000000;
-  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
+.activityrel{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
 }
 
-.Updates{
+
+.activity{
+  width: 100%;
+  top: 21vh;
+  box-sizing: border-box;
+  height: 35vh;
+  background-image: url("images/Acitivites.jpg");
+  background-position: 90%;
+  background-size: cover;
+  background-color: blue;
+  border-width: 0px 10px 10px 10px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 0px 0px 50px 50px;
+}
+
+#activity{
+  box-sizing: border-box;
+  height: 7vh;
+  background: #0071BC;
+  border-width: 10px 10px 0px 10px;
+  border-style: solid;
+  border-color: #000000;
+  box-shadow: 6px 0px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50px 50px 0px 0px;
+}
+
+#activity p{
+  display: inline-block;
+  position: relative;
+  top: -0.5vh;
+  margin: auto;
+  margin-left: 0.4em;
   
+  font-size: 3.5vh;
+  color: white;
+}
+
+#activity img{
+  display: inline-block;
+  padding-top: 1vh;
+  padding-left: 3em;
+  height: 4vh;
+}
+
+.status{
+  position: absolute;
+  width: 21em;
+  left: 36em;
+  top: 28vh;
+}
+
+#status{
+  height: 1.5vh;
+  margin-bottom: 0.5vh;
+  border-radius: 25px;
+  text-align: center;
+}
+
+#status img{
+  position: absolute;
+  margin-top: -1.9vh;
+  margin-left:8.5em;
+  height: 3.8vh;
+
+}
+
+#status p{
+  position: absolute;
+  margin-top: -0.6vh;
+  margin-left: -0.7em;
+  font-size: 3vh;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vh;
+  line-height: 29px;
+  
+}
+
+.done{
+  background: #2E8540;
+}
+
+.todo{
+  background: #FDB81E;
+}
+
+.todo p{
+  color: #212121;
+}
+
+.late{
+  background: #CD2026;
 }
 
 .inline{
   display: flex;
-  
 }
 
 .flex{
-  width: 15em;
+  width: 20em;
   margin-top: 2em;
+  height: 8vh;
+  text-align: center;
+}
+
+.flex p{
+  margin: auto;
+  margin-left: 0.2em;
+  font-size: 4vh;
+}
+
+.flex img{
+  height: 3.5vh;
 }
 
 #sleep {
-background: #981B1E;
+  background: #981B1E;
 }
 
 #food {
@@ -67,6 +175,5 @@ background: #981B1E;
 }
 
 #goals {
-background: #046B99;
-border: 3px solid #000000;
+  background: #046B99;
 }
